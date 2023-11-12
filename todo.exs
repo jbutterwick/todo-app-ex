@@ -14,6 +14,18 @@ defmodule Todo do
     IO.puts("#{Enum.join(task, "\n")}")
   end
 
+  def list_output(list) do
+    IO.puts("#{Enum.join(list, "\n")}")
+  end
+
+  def say_hi() do
+    IO.puts("HELLO WORLD")
+  end
+
+  def flip(task) do
+    task.status = !task.status
+  end
+
   def list_response() do
     task = IO.puts("#{Enum.join(task, "\n")}")
   end
